@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Love Story</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fff0f6;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ffb3c6;
+            color: white;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        section {
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .quote {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            object-fit: cover;
+            height: 250px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffb3c6;
+            color: white;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Swaru ka safar ❤️
+    </header>
+
+    <section>
+        <div class="quote">
+            "Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."
+        </div>
+
+        <div class="gallery">
+            <div style="text-align:center;">
+                <img src="1000267902.jpg" alt="Our Ghibli Photo" style="width:100%; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <p style="font-size:1.1rem; color:#d63384; margin-top:10px; font-weight:bold;">
+                    From day one till now, you are very special to me. We met like strangers, but now we mean the world to each other.
+                </p>
+            </div>
+            <img src="1000350230.jpg" alt="Our Photo 2" />
+            <img src="1000300478.jpg" alt="Our Photo 3" />
+            <img src="1000283205.jpg" alt="Our Photo 4" />
+        </div>
+
+        <div class="quote" style="margin-top:40px;">
+            "In your smile, I found something more beautiful than the stars."
+        </div>
+    <div class="quote" style="margin-top:40px;">
+            "Every moment with you becomes a memory, and every memory becomes my favorite place to live."
+        </div>
+
+        <h2 style="text-align:center; color:#d63384; margin-top:50px;">Our Beautiful Moments 💞</h2>
+
+        <div class="gallery">
+            <img src="1000267902.jpg" alt="Moment 1" />
+            <img src="1000350230.jpg" alt="Moment 2" />
+            <img src="1000300478.jpg" alt="Moment 3" />
+            <img src="1000283205.jpg" alt="Moment 4" />
+            <img src="1000282349.jpg" alt="Moment 5" />
+            <img src="1000282236.jpg" alt="Moment 6" />
+        </div>
+
+        <div class="quote" style="margin-top:40px;">
+            "You are the reason my heart feels like home. With you, love is effortless and forever feels real."
+        </div>
+    </section>
+
+    <footer>
+        Made with ❤️ by Us
+    </footer>
+    <section>
+        <h2 style="text-align:center; color:#d63384; margin-top:50px; font-size:2rem;">Our Story 💌</h2>
+        <div class="quote" style="font-size:1.2rem;">
+            "Somewhere between our first hello and our countless memories, I realized… my heart had found its forever place in you. Our journey isn’t perfect, but it’s ours — filled with laughter, warmth, mischief, and love that grows a little more every day."
+        </div>
+
+        <h2 style="text-align:center; color:#d63384; margin-top:50px; font-size:2rem;">For My Wife ❤️</h2>
+        <div class="quote" style="font-size:1.2rem;">
+            "You are my peace, my smile, my softness. You are the gentle magic in my everyday life. Thank you for being you — beautifully, wonderfully, lovingly you."
+        </div>
+
+        <h2 style="text-align:center; color:#d63384; margin-top:50px; font-size:2rem;">Our Slideshow ✨</h2>
+        <div class="slideshow-container" style="max-width:600px; margin:auto; border-radius:20px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+            <img class="slides" src="1000267902.jpg" style="width:100%; display:block;">
+            <img class="slides" src="1000350230.jpg" style="width:100%; display:none;">
+            <img class="slides" src="1000300478.jpg" style="width:100%; display:none;">
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slides");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
